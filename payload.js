@@ -5,8 +5,7 @@ fetch("/profile", {
   credentials: "same-origin",
   headers: { "Content-Type": "application/x-www-form-urlencoded" },
   body: new URLSearchParams({
-    email: "alice.xss@devbank.local",
-    password: "xssProof2026!"
+    email: "alice.remote.proof@devbank.local"
   }).toString()
 })
   .then(response => {
